@@ -8,6 +8,7 @@
 import SwiftUI
 import Amplify
 import AmplifyPlugins
+import AWSPluginsCore
 
 class AuthService: ObservableObject {
     
@@ -51,6 +52,7 @@ class AuthService: ObservableObject {
             switch result {
             case .success:
                 print("Sign in succeeded")
+                self.isUserLoggedIn(completion: completion)
                 completion(true, nil)
             case .failure(let error):
                 print("Sign in failed \(error)")
@@ -59,17 +61,37 @@ class AuthService: ObservableObject {
         }
     }
     
-    func isUserLoggedIn(completion: @escaping (Bool) -> ()) {
-        _ = Amplify.Auth.fetchAuthSession { result in
-            switch result {
-            case .success(let session):
-                print("Is user signed in - \(session.isSignedIn)")
-                completion(session.isSignedIn)
-            case .failure(let error):
-                print("Fetch session failed with error \(error)")
-                completion(false)
+    func isUserLoggedIn(completion: @escaping (Bool, String?) -> ()) {
+    
+        Amplify.Auth.fetchAuthSession { result in
+            do {
+                let session = try result.get()
+
+                // Get user sub or identity id
+                if let identityProvider = session as? AuthCognitoIdentityProvider {
+                    let usersub = try identityProvider.getUserSub().get()
+                    let identityId = try identityProvider.getIdentityId().get()
+                    print("User sub - \(usersub) and identity id \(identityId)")
+                    completion(true, usersub)
+                } else {
+                    completion(false, "Fetch auth session failed, userID not found")
+                }
+
+            } catch {
+                completion(false, "Fetch auth session failed with error - \(error)")
             }
         }
+//        _ = Amplify.Auth.fetchAuthSession { result in
+//            switch result {
+//            case .success(let session):
+//                print("Is user signed in - \(session.isSignedIn)")
+//                print("Is user signed in - \(session.options.pluginOptions)")
+//                completion(session.isSignedIn)
+//            case .failure(let error):
+//                print("Fetch session failed with error \(error)")
+//                completion(false)
+//            }
+//        }
     }
     
     func signOutGlobally(completion: @escaping (Bool, String?) -> ()) {

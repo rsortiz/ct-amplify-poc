@@ -9,9 +9,11 @@ import SwiftUI
 
 struct ContentView: View {
     
+    @State var userID: String = ""
     @State var username: String = ""
     @State var password: String = ""
     @State private var showSignUpView = false
+    @State private var showAddBooking = false
     @State private var showingAlert = false
     
     @State private var showingForm = false
@@ -25,6 +27,19 @@ struct ContentView: View {
             VStack(spacing: 16) {
                 if showingLoggedIn {
                     Text("You're logged in!")
+                    
+                    CTButton(title: "My Bookings",
+                             action: {
+                    }, buttonColor: .blue)
+                    
+                    CTButton(title: "Add booking",
+                             action: {
+                        showAddBooking = true
+                    }, buttonColor: .blue)
+                    
+                    NavigationLink(destination: AddBookingView(userID: userID), isActive: $showAddBooking) {
+                        EmptyView()
+                    }
                     
                     CTButton(title: "Logout",
                              action: {
@@ -47,16 +62,17 @@ struct ContentView: View {
                     CTButton(title: "Sign In",
                              action: {
                         Task {
-                            try await AuthService().signIn(username: username, password: password, completion: { success, errorDescription in
-                                if success {
+                            try await AuthService().signIn(username: username, password: password, completion: { success, info in
+                                if success,
+                                   let info = info {
                                     alertTitle = "Success"
                                     alertText = "Logged successfully"
-                                    
+                                    self.userID = info
                                     self.displayForm(false)
                                 } else {
                                     alertTitle = "Error"
                                     alertText = "It was not possible to login"
-                                    if let error = errorDescription {
+                                    if let error = info {
                                         alertText = "\(alertText): \(error)"
                                     }
                                 }
@@ -85,8 +101,14 @@ struct ContentView: View {
             .padding()
         }
         .onAppear() {
-            AuthService().isUserLoggedIn { success in
-                self.displayForm(!success)
+            AuthService().isUserLoggedIn { success, userID in
+                if success, let userID = userID {
+                    self.userID = userID
+                    self.displayForm(false)
+                } else {
+                    self.displayForm(true)
+                }
+                
             }
         }
     }

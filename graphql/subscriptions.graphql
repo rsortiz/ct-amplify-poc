@@ -1,0 +1,28 @@
+# this is an auto generated file. This will be overwritten
+subscription OnCreateBooking($filter: ModelSubscriptionBookingFilterInput) {
+  onCreateBooking(filter: $filter) {
+    id
+    resID
+    username
+    createdAt
+    updatedAt
+  }
+}
+subscription OnUpdateBooking($filter: ModelSubscriptionBookingFilterInput) {
+  onUpdateBooking(filter: $filter) {
+    id
+    resID
+    username
+    createdAt
+    updatedAt
+  }
+}
+subscription OnDeleteBooking($filter: ModelSubscriptionBookingFilterInput) {
+  onDeleteBooking(filter: $filter) {
+    id
+    resID
+    username
+    createdAt
+    updatedAt
+  }
+}

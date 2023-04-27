@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2612DE8BE781438819616FBA /* Booking.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47B844A139E7063FDB2B284 /* Booking.swift */; };
+		2B7C7013446F8C30A6D23DD8 /* AmplifyModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = D78FAB5F940D99E5FFB65086 /* AmplifyModels.swift */; };
 		AB623BB6FCA23864AABE83A9 /* Pods_CTAmplify.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2065C154675BD6ABCCBCD255 /* Pods_CTAmplify.framework */; };
 		AF1F904829FA90A700CC401D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF1F904729FA90A700CC401D /* AppDelegate.swift */; };
 		AF1F904B29FA915B00CC401D /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = AF1F904929FA915B00CC401D /* awsconfiguration.json */; };
@@ -14,11 +16,19 @@
 		AF1F904E29FA959300CC401D /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF1F904D29FA959300CC401D /* SignUpView.swift */; };
 		AF1F905029FA980B00CC401D /* CTButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF1F904F29FA980B00CC401D /* CTButton.swift */; };
 		AF1F905229FA9BD600CC401D /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF1F905129FA9BD600CC401D /* AuthService.swift */; };
+		AF1F905729FAD30E00CC401D /* AmplifyModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF1F905429FAD30E00CC401D /* AmplifyModels.swift */; };
+		AF1F905829FAD30E00CC401D /* Booking+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF1F905529FAD30E00CC401D /* Booking+Schema.swift */; };
+		AF1F905929FAD30E00CC401D /* Booking.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF1F905629FAD30E00CC401D /* Booking.swift */; };
+		AF1F905B29FAD83300CC401D /* AddBookingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF1F905A29FAD83300CC401D /* AddBookingView.swift */; };
+		AF1F905D29FAD91000CC401D /* Booking.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF1F905C29FAD91000CC401D /* Booking.swift */; };
+		AF1F906229FAD9BE00CC401D /* amplifyconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = AF1F906129FAD9BE00CC401D /* amplifyconfiguration.json */; };
+		AF1F906429FADA0600CC401D /* BookingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF1F906329FADA0600CC401D /* BookingService.swift */; };
 		AF2D0EBE29FA7AFC0061FD11 /* CTAmplifyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2D0EBD29FA7AFC0061FD11 /* CTAmplifyApp.swift */; };
 		AF2D0EC029FA7AFC0061FD11 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2D0EBF29FA7AFC0061FD11 /* ContentView.swift */; };
 		AF2D0EC229FA7AFD0061FD11 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF2D0EC129FA7AFD0061FD11 /* Assets.xcassets */; };
 		AF2D0EC529FA7AFD0061FD11 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF2D0EC429FA7AFD0061FD11 /* Preview Assets.xcassets */; };
 		B3CAA359F19488DCDE47D0BC /* amplifyconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 06ABA395948176577DAA0F11 /* amplifyconfiguration.json */; };
+		D69F905C43467B95FDC3EB75 /* Booking+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = C827831ABBDF6F0577613C75 /* Booking+Schema.swift */; };
 		F79C6014B3A5699D2C05A286 /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = B6CF9A0D60ECFFA476BD48D6 /* awsconfiguration.json */; };
 /* End PBXBuildFile section */
 
@@ -32,13 +42,23 @@
 		AF1F904D29FA959300CC401D /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		AF1F904F29FA980B00CC401D /* CTButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CTButton.swift; sourceTree = "<group>"; };
 		AF1F905129FA9BD600CC401D /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		AF1F905429FAD30E00CC401D /* AmplifyModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AmplifyModels.swift; path = amplify/generated/models/AmplifyModels.swift; sourceTree = SOURCE_ROOT; };
+		AF1F905529FAD30E00CC401D /* Booking+Schema.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Booking+Schema.swift"; path = "amplify/generated/models/Booking+Schema.swift"; sourceTree = SOURCE_ROOT; };
+		AF1F905629FAD30E00CC401D /* Booking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Booking.swift; path = amplify/generated/models/Booking.swift; sourceTree = SOURCE_ROOT; };
+		AF1F905A29FAD83300CC401D /* AddBookingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBookingView.swift; sourceTree = "<group>"; };
+		AF1F905C29FAD91000CC401D /* Booking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Booking.swift; path = amplify/generated/models/Booking.swift; sourceTree = SOURCE_ROOT; };
+		AF1F906129FAD9BE00CC401D /* amplifyconfiguration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = amplifyconfiguration.json; sourceTree = SOURCE_ROOT; };
+		AF1F906329FADA0600CC401D /* BookingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingService.swift; sourceTree = "<group>"; };
 		AF2D0EBA29FA7AFC0061FD11 /* CTAmplify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CTAmplify.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF2D0EBD29FA7AFC0061FD11 /* CTAmplifyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CTAmplifyApp.swift; sourceTree = "<group>"; };
 		AF2D0EBF29FA7AFC0061FD11 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		AF2D0EC129FA7AFD0061FD11 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AF2D0EC429FA7AFD0061FD11 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B6CF9A0D60ECFFA476BD48D6 /* awsconfiguration.json */ = {isa = PBXFileReference; explicitFileType = text.json; path = awsconfiguration.json; sourceTree = "<group>"; };
+		C47B844A139E7063FDB2B284 /* Booking.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Booking.swift; path = amplify/generated/models/Booking.swift; sourceTree = "<group>"; };
 		C7C12693CE319859B4DB8D7B /* Pods-CTAmplify.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CTAmplify.release.xcconfig"; path = "Target Support Files/Pods-CTAmplify/Pods-CTAmplify.release.xcconfig"; sourceTree = "<group>"; };
+		C827831ABBDF6F0577613C75 /* Booking+Schema.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = "Booking+Schema.swift"; path = "amplify/generated/models/Booking+Schema.swift"; sourceTree = "<group>"; };
+		D78FAB5F940D99E5FFB65086 /* AmplifyModels.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = AmplifyModels.swift; path = amplify/generated/models/AmplifyModels.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +100,43 @@
 			name = AmplifyConfig;
 			sourceTree = "<group>";
 		};
+		AF1F905329FAD30200CC401D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AF1F905C29FAD91000CC401D /* Booking.swift */,
+				AF1F905429FAD30E00CC401D /* AmplifyModels.swift */,
+				AF1F905529FAD30E00CC401D /* Booking+Schema.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		AF1F905E29FAD98000CC401D /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				AF1F905129FA9BD600CC401D /* AuthService.swift */,
+				AF1F906329FADA0600CC401D /* BookingService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		AF1F905F29FAD98D00CC401D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AF1F905A29FAD83300CC401D /* AddBookingView.swift */,
+				AF2D0EBF29FA7AFC0061FD11 /* ContentView.swift */,
+				AF1F904D29FA959300CC401D /* SignUpView.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		AF1F906029FAD99F00CC401D /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				AF1F904F29FA980B00CC401D /* CTButton.swift */,
+			);
+			name = Components;
+			sourceTree = "<group>";
+		};
 		AF2D0EB129FA7AFB0061FD11 = {
 			isa = PBXGroup;
 			children = (
@@ -88,6 +145,7 @@
 				79DCF462715E418782F7CF92 /* Pods */,
 				913C8AECAD2F96029EBB31C8 /* Frameworks */,
 				A81FB1E2F449DEC8A07B1564 /* AmplifyConfig */,
+				CD01B5459E76FA9D2DAAB8B9 /* AmplifyModels */,
 			);
 			sourceTree = "<group>";
 		};
@@ -102,14 +160,14 @@
 		AF2D0EBC29FA7AFC0061FD11 /* CTAmplify */ = {
 			isa = PBXGroup;
 			children = (
-				AF1F904A29FA915B00CC401D /* amplifyconfiguration.json */,
+				AF1F906029FAD99F00CC401D /* Components */,
+				AF1F905F29FAD98D00CC401D /* Views */,
+				AF1F905E29FAD98000CC401D /* Services */,
+				AF1F905329FAD30200CC401D /* Models */,
 				AF1F904929FA915B00CC401D /* awsconfiguration.json */,
+				AF1F906129FAD9BE00CC401D /* amplifyconfiguration.json */,
 				AF2D0EBD29FA7AFC0061FD11 /* CTAmplifyApp.swift */,
-				AF2D0EBF29FA7AFC0061FD11 /* ContentView.swift */,
 				AF1F904729FA90A700CC401D /* AppDelegate.swift */,
-				AF1F904D29FA959300CC401D /* SignUpView.swift */,
-				AF1F904F29FA980B00CC401D /* CTButton.swift */,
-				AF1F905129FA9BD600CC401D /* AuthService.swift */,
 				AF2D0EC129FA7AFD0061FD11 /* Assets.xcassets */,
 				AF2D0EC329FA7AFD0061FD11 /* Preview Content */,
 			);
@@ -122,6 +180,17 @@
 				AF2D0EC429FA7AFD0061FD11 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CD01B5459E76FA9D2DAAB8B9 /* AmplifyModels */ = {
+			isa = PBXGroup;
+			children = (
+				D78FAB5F940D99E5FFB65086 /* AmplifyModels.swift */,
+				C827831ABBDF6F0577613C75 /* Booking+Schema.swift */,
+				C47B844A139E7063FDB2B284 /* Booking.swift */,
+				AF1F905629FAD30E00CC401D /* Booking.swift */,
+			);
+			name = AmplifyModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -187,6 +256,7 @@
 				AF1F904B29FA915B00CC401D /* awsconfiguration.json in Resources */,
 				AF1F904C29FA915B00CC401D /* amplifyconfiguration.json in Resources */,
 				AF2D0EC529FA7AFD0061FD11 /* Preview Assets.xcassets in Resources */,
+				AF1F906229FAD9BE00CC401D /* amplifyconfiguration.json in Resources */,
 				AF2D0EC229FA7AFD0061FD11 /* Assets.xcassets in Resources */,
 				F79C6014B3A5699D2C05A286 /* awsconfiguration.json in Resources */,
 				B3CAA359F19488DCDE47D0BC /* amplifyconfiguration.json in Resources */,
@@ -246,12 +316,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF1F905729FAD30E00CC401D /* AmplifyModels.swift in Sources */,
+				AF1F905929FAD30E00CC401D /* Booking.swift in Sources */,
+				AF1F905829FAD30E00CC401D /* Booking+Schema.swift in Sources */,
 				AF1F904E29FA959300CC401D /* SignUpView.swift in Sources */,
+				AF1F905B29FAD83300CC401D /* AddBookingView.swift in Sources */,
 				AF1F905029FA980B00CC401D /* CTButton.swift in Sources */,
+				AF1F906429FADA0600CC401D /* BookingService.swift in Sources */,
 				AF1F904829FA90A700CC401D /* AppDelegate.swift in Sources */,
 				AF1F905229FA9BD600CC401D /* AuthService.swift in Sources */,
 				AF2D0EC029FA7AFC0061FD11 /* ContentView.swift in Sources */,
+				AF1F905D29FAD91000CC401D /* Booking.swift in Sources */,
 				AF2D0EBE29FA7AFC0061FD11 /* CTAmplifyApp.swift in Sources */,
+				2B7C7013446F8C30A6D23DD8 /* AmplifyModels.swift in Sources */,
+				D69F905C43467B95FDC3EB75 /* Booking+Schema.swift in Sources */,
+				2612DE8BE781438819616FBA /* Booking.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

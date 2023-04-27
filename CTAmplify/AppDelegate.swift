@@ -12,17 +12,15 @@ import AmplifyPlugins
 class AppDelegate: NSObject, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         do {
-//            Amplify.Logging.logLevel = .verbose
-            
             // Configure Amplify as usual...
             try Amplify.add(plugin: AWSCognitoAuthPlugin())
+            try Amplify.add(plugin: AWSAPIPlugin(modelRegistration: AmplifyModels()))
             try Amplify.configure()
             print("Amplify configured with auth plugin")
         } catch {
             print("An error occurred setting up Amplify: \(error)")
         }
-        
-        
+
         return true
     }
 }
