@@ -53,7 +53,6 @@ class AuthService: ObservableObject {
             case .success:
                 print("Sign in succeeded")
                 self.isUserLoggedIn(completion: completion)
-                completion(true, nil)
             case .failure(let error):
                 print("Sign in failed \(error)")
                 completion(false, "Sign in failed \(error)")
@@ -81,17 +80,6 @@ class AuthService: ObservableObject {
                 completion(false, "Fetch auth session failed with error - \(error)")
             }
         }
-//        _ = Amplify.Auth.fetchAuthSession { result in
-//            switch result {
-//            case .success(let session):
-//                print("Is user signed in - \(session.isSignedIn)")
-//                print("Is user signed in - \(session.options.pluginOptions)")
-//                completion(session.isSignedIn)
-//            case .failure(let error):
-//                print("Fetch session failed with error \(error)")
-//                completion(false)
-//            }
-//        }
     }
     
     func signOutGlobally(completion: @escaping (Bool, String?) -> ()) {

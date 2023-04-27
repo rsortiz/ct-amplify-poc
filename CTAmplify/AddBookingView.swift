@@ -49,7 +49,7 @@ struct AddBookingView: View {
                         return
                     }
                     
-                    BookingService().createBooking(resID: bookingID, username: userID) { success in
+                    BookingService().createBooking(resID: bookingID, userID: userID) { success in
                         if success {
                             alertTitle = "Success"
                             alertText = "Booking added with success."

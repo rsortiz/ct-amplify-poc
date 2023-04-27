@@ -14,6 +14,7 @@ struct ContentView: View {
     @State var password: String = ""
     @State private var showSignUpView = false
     @State private var showAddBooking = false
+    @State private var showMyBookings = false
     @State private var showingAlert = false
     
     @State private var showingForm = false
@@ -30,7 +31,12 @@ struct ContentView: View {
                     
                     CTButton(title: "My Bookings",
                              action: {
+                        showMyBookings = true
                     }, buttonColor: .blue)
+                    
+                    NavigationLink(destination: MyBookingsView(userID: userID), isActive: $showMyBookings) {
+                        EmptyView()
+                    }
                     
                     CTButton(title: "Add booking",
                              action: {
