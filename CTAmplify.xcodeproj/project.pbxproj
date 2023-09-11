@@ -7,8 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		07AE2F4EC3C2405413B01151 /* SaleBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = E94DCE19044280EABAE89AB9 /* SaleBanner.swift */; };
+		11ADCAE48F237095D39CCAF1 /* SettingsMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4542305C51B86B86CE9D8AE5 /* SettingsMenu.swift */; };
 		2612DE8BE781438819616FBA /* Booking.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47B844A139E7063FDB2B284 /* Booking.swift */; };
+		278325D73F17C4901D10F037 /* Partner+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 875E23E05AD131C4627CD7D3 /* Partner+Schema.swift */; };
 		2B7C7013446F8C30A6D23DD8 /* AmplifyModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = D78FAB5F940D99E5FFB65086 /* AmplifyModels.swift */; };
+		8016EE58920DDD3908D4A915 /* USPSpec+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21233BB9FE9880C87FA2B987 /* USPSpec+Schema.swift */; };
+		83B46F7BA2D481E3DCC7E908 /* Partner.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED836E178B1AD17A1F1426F /* Partner.swift */; };
 		AB623BB6FCA23864AABE83A9 /* Pods_CTAmplify.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2065C154675BD6ABCCBCD255 /* Pods_CTAmplify.framework */; };
 		AF1F904829FA90A700CC401D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF1F904729FA90A700CC401D /* AppDelegate.swift */; };
 		AF1F904B29FA915B00CC401D /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = AF1F904929FA915B00CC401D /* awsconfiguration.json */; };
@@ -16,11 +21,7 @@
 		AF1F904E29FA959300CC401D /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF1F904D29FA959300CC401D /* SignUpView.swift */; };
 		AF1F905029FA980B00CC401D /* CTButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF1F904F29FA980B00CC401D /* CTButton.swift */; };
 		AF1F905229FA9BD600CC401D /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF1F905129FA9BD600CC401D /* AuthService.swift */; };
-		AF1F905729FAD30E00CC401D /* AmplifyModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF1F905429FAD30E00CC401D /* AmplifyModels.swift */; };
-		AF1F905829FAD30E00CC401D /* Booking+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF1F905529FAD30E00CC401D /* Booking+Schema.swift */; };
-		AF1F905929FAD30E00CC401D /* Booking.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF1F905629FAD30E00CC401D /* Booking.swift */; };
 		AF1F905B29FAD83300CC401D /* AddBookingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF1F905A29FAD83300CC401D /* AddBookingView.swift */; };
-		AF1F905D29FAD91000CC401D /* Booking.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF1F905C29FAD91000CC401D /* Booking.swift */; };
 		AF1F906229FAD9BE00CC401D /* amplifyconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = AF1F906129FAD9BE00CC401D /* amplifyconfiguration.json */; };
 		AF1F906429FADA0600CC401D /* BookingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF1F906329FADA0600CC401D /* BookingService.swift */; };
 		AF1F906629FAE23300CC401D /* MyBookingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF1F906529FAE23300CC401D /* MyBookingsView.swift */; };
@@ -29,25 +30,32 @@
 		AF2D0EC229FA7AFD0061FD11 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF2D0EC129FA7AFD0061FD11 /* Assets.xcassets */; };
 		AF2D0EC529FA7AFD0061FD11 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF2D0EC429FA7AFD0061FD11 /* Preview Assets.xcassets */; };
 		B3CAA359F19488DCDE47D0BC /* amplifyconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 06ABA395948176577DAA0F11 /* amplifyconfiguration.json */; };
+		CDA839483DC2E21856C89047 /* SettingsMenu+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48DFE2C5698681B3A67C9F5E /* SettingsMenu+Schema.swift */; };
 		D69F905C43467B95FDC3EB75 /* Booking+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = C827831ABBDF6F0577613C75 /* Booking+Schema.swift */; };
+		DCC7689FE00585ABCFD6AD37 /* SupplierBenefitCode+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58E768CDD5C8DC87232A9CC /* SupplierBenefitCode+Schema.swift */; };
+		E2702B51F8FA03F0175963E9 /* SupplierBenefitCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112115E5E328C3D9A2C0FC0B /* SupplierBenefitCode.swift */; };
+		F7010E01CB957DD5F5D839C1 /* USPSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE70DAC252C14686A9E1DE1 /* USPSpec.swift */; };
 		F79C6014B3A5699D2C05A286 /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = B6CF9A0D60ECFFA476BD48D6 /* awsconfiguration.json */; };
+		FF0070ECDE23D1FAC3A5CE39 /* SaleBanner+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF5CA654827A99A0BA31261A /* SaleBanner+Schema.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		06ABA395948176577DAA0F11 /* amplifyconfiguration.json */ = {isa = PBXFileReference; explicitFileType = text.json; path = amplifyconfiguration.json; sourceTree = "<group>"; };
+		112115E5E328C3D9A2C0FC0B /* SupplierBenefitCode.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; lastKnownFileType = sourcecode.swift; name = SupplierBenefitCode.swift; path = amplify/generated/models/SupplierBenefitCode.swift; sourceTree = "<group>"; };
 		2065C154675BD6ABCCBCD255 /* Pods_CTAmplify.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CTAmplify.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		21233BB9FE9880C87FA2B987 /* USPSpec+Schema.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; lastKnownFileType = sourcecode.swift; name = "USPSpec+Schema.swift"; path = "amplify/generated/models/USPSpec+Schema.swift"; sourceTree = "<group>"; };
+		2CE70DAC252C14686A9E1DE1 /* USPSpec.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; lastKnownFileType = sourcecode.swift; name = USPSpec.swift; path = amplify/generated/models/USPSpec.swift; sourceTree = "<group>"; };
+		4542305C51B86B86CE9D8AE5 /* SettingsMenu.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; lastKnownFileType = sourcecode.swift; name = SettingsMenu.swift; path = amplify/generated/models/SettingsMenu.swift; sourceTree = "<group>"; };
+		48DFE2C5698681B3A67C9F5E /* SettingsMenu+Schema.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; lastKnownFileType = sourcecode.swift; name = "SettingsMenu+Schema.swift"; path = "amplify/generated/models/SettingsMenu+Schema.swift"; sourceTree = "<group>"; };
 		580F7E6DF5DAE825C133D18D /* Pods-CTAmplify.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CTAmplify.debug.xcconfig"; path = "Target Support Files/Pods-CTAmplify/Pods-CTAmplify.debug.xcconfig"; sourceTree = "<group>"; };
+		875E23E05AD131C4627CD7D3 /* Partner+Schema.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; lastKnownFileType = sourcecode.swift; name = "Partner+Schema.swift"; path = "amplify/generated/models/Partner+Schema.swift"; sourceTree = "<group>"; };
 		AF1F904729FA90A700CC401D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AF1F904929FA915B00CC401D /* awsconfiguration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = awsconfiguration.json; sourceTree = SOURCE_ROOT; };
 		AF1F904A29FA915B00CC401D /* amplifyconfiguration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = amplifyconfiguration.json; sourceTree = SOURCE_ROOT; };
 		AF1F904D29FA959300CC401D /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		AF1F904F29FA980B00CC401D /* CTButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CTButton.swift; sourceTree = "<group>"; };
 		AF1F905129FA9BD600CC401D /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
-		AF1F905429FAD30E00CC401D /* AmplifyModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AmplifyModels.swift; path = amplify/generated/models/AmplifyModels.swift; sourceTree = SOURCE_ROOT; };
-		AF1F905529FAD30E00CC401D /* Booking+Schema.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Booking+Schema.swift"; path = "amplify/generated/models/Booking+Schema.swift"; sourceTree = SOURCE_ROOT; };
-		AF1F905629FAD30E00CC401D /* Booking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Booking.swift; path = amplify/generated/models/Booking.swift; sourceTree = SOURCE_ROOT; };
 		AF1F905A29FAD83300CC401D /* AddBookingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBookingView.swift; sourceTree = "<group>"; };
-		AF1F905C29FAD91000CC401D /* Booking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Booking.swift; path = amplify/generated/models/Booking.swift; sourceTree = SOURCE_ROOT; };
 		AF1F906129FAD9BE00CC401D /* amplifyconfiguration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = amplifyconfiguration.json; sourceTree = SOURCE_ROOT; };
 		AF1F906329FADA0600CC401D /* BookingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingService.swift; sourceTree = "<group>"; };
 		AF1F906529FAE23300CC401D /* MyBookingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyBookingsView.swift; sourceTree = "<group>"; };
@@ -57,10 +65,14 @@
 		AF2D0EC129FA7AFD0061FD11 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AF2D0EC429FA7AFD0061FD11 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B6CF9A0D60ECFFA476BD48D6 /* awsconfiguration.json */ = {isa = PBXFileReference; explicitFileType = text.json; path = awsconfiguration.json; sourceTree = "<group>"; };
-		C47B844A139E7063FDB2B284 /* Booking.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Booking.swift; path = amplify/generated/models/Booking.swift; sourceTree = "<group>"; };
+		C47B844A139E7063FDB2B284 /* Booking.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; lastKnownFileType = sourcecode.swift; name = Booking.swift; path = amplify/generated/models/Booking.swift; sourceTree = "<group>"; };
 		C7C12693CE319859B4DB8D7B /* Pods-CTAmplify.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CTAmplify.release.xcconfig"; path = "Target Support Files/Pods-CTAmplify/Pods-CTAmplify.release.xcconfig"; sourceTree = "<group>"; };
-		C827831ABBDF6F0577613C75 /* Booking+Schema.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = "Booking+Schema.swift"; path = "amplify/generated/models/Booking+Schema.swift"; sourceTree = "<group>"; };
-		D78FAB5F940D99E5FFB65086 /* AmplifyModels.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = AmplifyModels.swift; path = amplify/generated/models/AmplifyModels.swift; sourceTree = "<group>"; };
+		C827831ABBDF6F0577613C75 /* Booking+Schema.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; lastKnownFileType = sourcecode.swift; name = "Booking+Schema.swift"; path = "amplify/generated/models/Booking+Schema.swift"; sourceTree = "<group>"; };
+		D78FAB5F940D99E5FFB65086 /* AmplifyModels.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; lastKnownFileType = sourcecode.swift; name = AmplifyModels.swift; path = amplify/generated/models/AmplifyModels.swift; sourceTree = "<group>"; };
+		DF5CA654827A99A0BA31261A /* SaleBanner+Schema.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; lastKnownFileType = sourcecode.swift; name = "SaleBanner+Schema.swift"; path = "amplify/generated/models/SaleBanner+Schema.swift"; sourceTree = "<group>"; };
+		E94DCE19044280EABAE89AB9 /* SaleBanner.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; lastKnownFileType = sourcecode.swift; name = SaleBanner.swift; path = amplify/generated/models/SaleBanner.swift; sourceTree = "<group>"; };
+		EED836E178B1AD17A1F1426F /* Partner.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; lastKnownFileType = sourcecode.swift; name = Partner.swift; path = amplify/generated/models/Partner.swift; sourceTree = "<group>"; };
+		F58E768CDD5C8DC87232A9CC /* SupplierBenefitCode+Schema.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; lastKnownFileType = sourcecode.swift; name = "SupplierBenefitCode+Schema.swift"; path = "amplify/generated/models/SupplierBenefitCode+Schema.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +110,7 @@
 				B6CF9A0D60ECFFA476BD48D6 /* awsconfiguration.json */,
 				06ABA395948176577DAA0F11 /* amplifyconfiguration.json */,
 				AF1F904A29FA915B00CC401D /* amplifyconfiguration.json */,
+				AF1F904929FA915B00CC401D /* awsconfiguration.json */,
 			);
 			name = AmplifyConfig;
 			sourceTree = "<group>";
@@ -105,9 +118,6 @@
 		AF1F905329FAD30200CC401D /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				AF1F905C29FAD91000CC401D /* Booking.swift */,
-				AF1F905429FAD30E00CC401D /* AmplifyModels.swift */,
-				AF1F905529FAD30E00CC401D /* Booking+Schema.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -167,7 +177,6 @@
 				AF1F905F29FAD98D00CC401D /* Views */,
 				AF1F905E29FAD98000CC401D /* Services */,
 				AF1F905329FAD30200CC401D /* Models */,
-				AF1F904929FA915B00CC401D /* awsconfiguration.json */,
 				AF1F906129FAD9BE00CC401D /* amplifyconfiguration.json */,
 				AF2D0EBD29FA7AFC0061FD11 /* CTAmplifyApp.swift */,
 				AF1F904729FA90A700CC401D /* AppDelegate.swift */,
@@ -191,7 +200,16 @@
 				D78FAB5F940D99E5FFB65086 /* AmplifyModels.swift */,
 				C827831ABBDF6F0577613C75 /* Booking+Schema.swift */,
 				C47B844A139E7063FDB2B284 /* Booking.swift */,
-				AF1F905629FAD30E00CC401D /* Booking.swift */,
+				875E23E05AD131C4627CD7D3 /* Partner+Schema.swift */,
+				EED836E178B1AD17A1F1426F /* Partner.swift */,
+				DF5CA654827A99A0BA31261A /* SaleBanner+Schema.swift */,
+				E94DCE19044280EABAE89AB9 /* SaleBanner.swift */,
+				48DFE2C5698681B3A67C9F5E /* SettingsMenu+Schema.swift */,
+				4542305C51B86B86CE9D8AE5 /* SettingsMenu.swift */,
+				F58E768CDD5C8DC87232A9CC /* SupplierBenefitCode+Schema.swift */,
+				112115E5E328C3D9A2C0FC0B /* SupplierBenefitCode.swift */,
+				21233BB9FE9880C87FA2B987 /* USPSpec+Schema.swift */,
+				2CE70DAC252C14686A9E1DE1 /* USPSpec.swift */,
 			);
 			name = AmplifyModels;
 			sourceTree = "<group>";
@@ -319,9 +337,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AF1F905729FAD30E00CC401D /* AmplifyModels.swift in Sources */,
-				AF1F905929FAD30E00CC401D /* Booking.swift in Sources */,
-				AF1F905829FAD30E00CC401D /* Booking+Schema.swift in Sources */,
 				AF1F904E29FA959300CC401D /* SignUpView.swift in Sources */,
 				AF1F905B29FAD83300CC401D /* AddBookingView.swift in Sources */,
 				AF1F905029FA980B00CC401D /* CTButton.swift in Sources */,
@@ -329,12 +344,21 @@
 				AF1F904829FA90A700CC401D /* AppDelegate.swift in Sources */,
 				AF1F905229FA9BD600CC401D /* AuthService.swift in Sources */,
 				AF2D0EC029FA7AFC0061FD11 /* ContentView.swift in Sources */,
-				AF1F905D29FAD91000CC401D /* Booking.swift in Sources */,
 				AF2D0EBE29FA7AFC0061FD11 /* CTAmplifyApp.swift in Sources */,
 				AF1F906629FAE23300CC401D /* MyBookingsView.swift in Sources */,
 				2B7C7013446F8C30A6D23DD8 /* AmplifyModels.swift in Sources */,
 				D69F905C43467B95FDC3EB75 /* Booking+Schema.swift in Sources */,
 				2612DE8BE781438819616FBA /* Booking.swift in Sources */,
+				278325D73F17C4901D10F037 /* Partner+Schema.swift in Sources */,
+				83B46F7BA2D481E3DCC7E908 /* Partner.swift in Sources */,
+				FF0070ECDE23D1FAC3A5CE39 /* SaleBanner+Schema.swift in Sources */,
+				07AE2F4EC3C2405413B01151 /* SaleBanner.swift in Sources */,
+				CDA839483DC2E21856C89047 /* SettingsMenu+Schema.swift in Sources */,
+				11ADCAE48F237095D39CCAF1 /* SettingsMenu.swift in Sources */,
+				DCC7689FE00585ABCFD6AD37 /* SupplierBenefitCode+Schema.swift in Sources */,
+				E2702B51F8FA03F0175963E9 /* SupplierBenefitCode.swift in Sources */,
+				8016EE58920DDD3908D4A915 /* USPSpec+Schema.swift in Sources */,
+				F7010E01CB957DD5F5D839C1 /* USPSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

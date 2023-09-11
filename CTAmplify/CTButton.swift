@@ -18,8 +18,8 @@ struct CTButton: View {
         Button(action: action, label: {
             HStack {
                 
-                if let systemImage = imageName {
-                    Image(systemName: systemImage)
+                if imageName.count > 0 {
+                    Image(systemName: imageName)
                         .font(Font.system(size: 15).bold())
                 }
                 Text(title)

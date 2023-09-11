@@ -1,6 +1,6 @@
 source 'https://cdn.cocoapods.org/'
 
-platform :ios, '11.0'
+platform :ios, '16.0'
 inhibit_all_warnings!
 
 target 'CTAmplify' do

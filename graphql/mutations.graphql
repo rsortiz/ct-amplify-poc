@@ -1,4 +1,5 @@
 # this is an auto generated file. This will be overwritten
+
 mutation CreateBooking(
   $input: CreateBookingInput!
   $condition: ModelBookingConditionInput
@@ -9,8 +10,13 @@ mutation CreateBooking(
     username
     createdAt
     updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+    __typename
   }
 }
+
 mutation UpdateBooking(
   $input: UpdateBookingInput!
   $condition: ModelBookingConditionInput
@@ -21,8 +27,13 @@ mutation UpdateBooking(
     username
     createdAt
     updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+    __typename
   }
 }
+
 mutation DeleteBooking(
   $input: DeleteBookingInput!
   $condition: ModelBookingConditionInput
@@ -33,5 +44,465 @@ mutation DeleteBooking(
     username
     createdAt
     updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+    __typename
+  }
+}
+
+mutation CreatePartner(
+  $input: CreatePartnerInput!
+  $condition: ModelPartnerConditionInput
+) {
+  createPartner(input: $input, condition: $condition) {
+    id
+    implementationID
+    name
+    tag
+    clientIds
+    enablePSD2WebForm
+    enablePrePaidExtras
+    enableZeroExcess
+    enableZeroExcessUpSell
+    enableQuickFilters
+    enableRatings
+    loyaltyRegex
+    enableCovidInsuranceMessage
+    imageBaseURL
+    landingPageIcons
+    landingPageIconsDark
+    enableTracking
+    loyaltyProgramId
+    ratingType
+    enableLoyaltyRead
+    forceCalendarFirstDayOfWeek
+    enableGooglePay
+    enableApplePay
+    chipDiscountMechanicType
+    saleBanner {
+      id
+      type
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+      __typename
+    }
+    supplierBenefitCodes {
+      items {
+        id
+        type
+        createdAt
+        updatedAt
+        _version
+        _deleted
+        _lastChangedAt
+        partnerSupplierBenefitCodesId
+        __typename
+      }
+      nextToken
+      startedAt
+      __typename
+    }
+    uspSpec {
+      id
+      type
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+      __typename
+    }
+    settingsMenu {
+      id
+      type
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+      __typename
+    }
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+    partnerSaleBannerId
+    partnerUspSpecId
+    partnerSettingsMenuId
+    __typename
+  }
+}
+
+mutation UpdatePartner(
+  $input: UpdatePartnerInput!
+  $condition: ModelPartnerConditionInput
+) {
+  updatePartner(input: $input, condition: $condition) {
+    id
+    implementationID
+    name
+    tag
+    clientIds
+    enablePSD2WebForm
+    enablePrePaidExtras
+    enableZeroExcess
+    enableZeroExcessUpSell
+    enableQuickFilters
+    enableRatings
+    loyaltyRegex
+    enableCovidInsuranceMessage
+    imageBaseURL
+    landingPageIcons
+    landingPageIconsDark
+    enableTracking
+    loyaltyProgramId
+    ratingType
+    enableLoyaltyRead
+    forceCalendarFirstDayOfWeek
+    enableGooglePay
+    enableApplePay
+    chipDiscountMechanicType
+    saleBanner {
+      id
+      type
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+      __typename
+    }
+    supplierBenefitCodes {
+      items {
+        id
+        type
+        createdAt
+        updatedAt
+        _version
+        _deleted
+        _lastChangedAt
+        partnerSupplierBenefitCodesId
+        __typename
+      }
+      nextToken
+      startedAt
+      __typename
+    }
+    uspSpec {
+      id
+      type
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+      __typename
+    }
+    settingsMenu {
+      id
+      type
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+      __typename
+    }
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+    partnerSaleBannerId
+    partnerUspSpecId
+    partnerSettingsMenuId
+    __typename
+  }
+}
+
+mutation DeletePartner(
+  $input: DeletePartnerInput!
+  $condition: ModelPartnerConditionInput
+) {
+  deletePartner(input: $input, condition: $condition) {
+    id
+    implementationID
+    name
+    tag
+    clientIds
+    enablePSD2WebForm
+    enablePrePaidExtras
+    enableZeroExcess
+    enableZeroExcessUpSell
+    enableQuickFilters
+    enableRatings
+    loyaltyRegex
+    enableCovidInsuranceMessage
+    imageBaseURL
+    landingPageIcons
+    landingPageIconsDark
+    enableTracking
+    loyaltyProgramId
+    ratingType
+    enableLoyaltyRead
+    forceCalendarFirstDayOfWeek
+    enableGooglePay
+    enableApplePay
+    chipDiscountMechanicType
+    saleBanner {
+      id
+      type
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+      __typename
+    }
+    supplierBenefitCodes {
+      items {
+        id
+        type
+        createdAt
+        updatedAt
+        _version
+        _deleted
+        _lastChangedAt
+        partnerSupplierBenefitCodesId
+        __typename
+      }
+      nextToken
+      startedAt
+      __typename
+    }
+    uspSpec {
+      id
+      type
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+      __typename
+    }
+    settingsMenu {
+      id
+      type
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+      __typename
+    }
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+    partnerSaleBannerId
+    partnerUspSpecId
+    partnerSettingsMenuId
+    __typename
+  }
+}
+
+mutation CreateSaleBanner(
+  $input: CreateSaleBannerInput!
+  $condition: ModelSaleBannerConditionInput
+) {
+  createSaleBanner(input: $input, condition: $condition) {
+    id
+    type
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+    __typename
+  }
+}
+
+mutation UpdateSaleBanner(
+  $input: UpdateSaleBannerInput!
+  $condition: ModelSaleBannerConditionInput
+) {
+  updateSaleBanner(input: $input, condition: $condition) {
+    id
+    type
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+    __typename
+  }
+}
+
+mutation DeleteSaleBanner(
+  $input: DeleteSaleBannerInput!
+  $condition: ModelSaleBannerConditionInput
+) {
+  deleteSaleBanner(input: $input, condition: $condition) {
+    id
+    type
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+    __typename
+  }
+}
+
+mutation CreateSupplierBenefitCode(
+  $input: CreateSupplierBenefitCodeInput!
+  $condition: ModelSupplierBenefitCodeConditionInput
+) {
+  createSupplierBenefitCode(input: $input, condition: $condition) {
+    id
+    type
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+    partnerSupplierBenefitCodesId
+    __typename
+  }
+}
+
+mutation UpdateSupplierBenefitCode(
+  $input: UpdateSupplierBenefitCodeInput!
+  $condition: ModelSupplierBenefitCodeConditionInput
+) {
+  updateSupplierBenefitCode(input: $input, condition: $condition) {
+    id
+    type
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+    partnerSupplierBenefitCodesId
+    __typename
+  }
+}
+
+mutation DeleteSupplierBenefitCode(
+  $input: DeleteSupplierBenefitCodeInput!
+  $condition: ModelSupplierBenefitCodeConditionInput
+) {
+  deleteSupplierBenefitCode(input: $input, condition: $condition) {
+    id
+    type
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+    partnerSupplierBenefitCodesId
+    __typename
+  }
+}
+
+mutation CreateUSPSpec(
+  $input: CreateUSPSpecInput!
+  $condition: ModelUSPSpecConditionInput
+) {
+  createUSPSpec(input: $input, condition: $condition) {
+    id
+    type
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+    __typename
+  }
+}
+
+mutation UpdateUSPSpec(
+  $input: UpdateUSPSpecInput!
+  $condition: ModelUSPSpecConditionInput
+) {
+  updateUSPSpec(input: $input, condition: $condition) {
+    id
+    type
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+    __typename
+  }
+}
+
+mutation DeleteUSPSpec(
+  $input: DeleteUSPSpecInput!
+  $condition: ModelUSPSpecConditionInput
+) {
+  deleteUSPSpec(input: $input, condition: $condition) {
+    id
+    type
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+    __typename
+  }
+}
+
+mutation CreateSettingsMenu(
+  $input: CreateSettingsMenuInput!
+  $condition: ModelSettingsMenuConditionInput
+) {
+  createSettingsMenu(input: $input, condition: $condition) {
+    id
+    type
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+    __typename
+  }
+}
+
+mutation UpdateSettingsMenu(
+  $input: UpdateSettingsMenuInput!
+  $condition: ModelSettingsMenuConditionInput
+) {
+  updateSettingsMenu(input: $input, condition: $condition) {
+    id
+    type
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+    __typename
+  }
+}
+
+mutation DeleteSettingsMenu(
+  $input: DeleteSettingsMenuInput!
+  $condition: ModelSettingsMenuConditionInput
+) {
+  deleteSettingsMenu(input: $input, condition: $condition) {
+    id
+    type
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+    __typename
   }
 }

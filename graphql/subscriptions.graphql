@@ -1,4 +1,5 @@
 # this is an auto generated file. This will be overwritten
+
 subscription OnCreateBooking($filter: ModelSubscriptionBookingFilterInput) {
   onCreateBooking(filter: $filter) {
     id
@@ -6,8 +7,13 @@ subscription OnCreateBooking($filter: ModelSubscriptionBookingFilterInput) {
     username
     createdAt
     updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+    __typename
   }
 }
+
 subscription OnUpdateBooking($filter: ModelSubscriptionBookingFilterInput) {
   onUpdateBooking(filter: $filter) {
     id
@@ -15,8 +21,13 @@ subscription OnUpdateBooking($filter: ModelSubscriptionBookingFilterInput) {
     username
     createdAt
     updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+    __typename
   }
 }
+
 subscription OnDeleteBooking($filter: ModelSubscriptionBookingFilterInput) {
   onDeleteBooking(filter: $filter) {
     id
@@ -24,5 +35,438 @@ subscription OnDeleteBooking($filter: ModelSubscriptionBookingFilterInput) {
     username
     createdAt
     updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+    __typename
+  }
+}
+
+subscription OnCreatePartner($filter: ModelSubscriptionPartnerFilterInput) {
+  onCreatePartner(filter: $filter) {
+    id
+    implementationID
+    name
+    tag
+    clientIds
+    enablePSD2WebForm
+    enablePrePaidExtras
+    enableZeroExcess
+    enableZeroExcessUpSell
+    enableQuickFilters
+    enableRatings
+    loyaltyRegex
+    enableCovidInsuranceMessage
+    imageBaseURL
+    landingPageIcons
+    landingPageIconsDark
+    enableTracking
+    loyaltyProgramId
+    ratingType
+    enableLoyaltyRead
+    forceCalendarFirstDayOfWeek
+    enableGooglePay
+    enableApplePay
+    chipDiscountMechanicType
+    saleBanner {
+      id
+      type
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+      __typename
+    }
+    supplierBenefitCodes {
+      items {
+        id
+        type
+        createdAt
+        updatedAt
+        _version
+        _deleted
+        _lastChangedAt
+        partnerSupplierBenefitCodesId
+        __typename
+      }
+      nextToken
+      startedAt
+      __typename
+    }
+    uspSpec {
+      id
+      type
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+      __typename
+    }
+    settingsMenu {
+      id
+      type
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+      __typename
+    }
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+    partnerSaleBannerId
+    partnerUspSpecId
+    partnerSettingsMenuId
+    __typename
+  }
+}
+
+subscription OnUpdatePartner($filter: ModelSubscriptionPartnerFilterInput) {
+  onUpdatePartner(filter: $filter) {
+    id
+    implementationID
+    name
+    tag
+    clientIds
+    enablePSD2WebForm
+    enablePrePaidExtras
+    enableZeroExcess
+    enableZeroExcessUpSell
+    enableQuickFilters
+    enableRatings
+    loyaltyRegex
+    enableCovidInsuranceMessage
+    imageBaseURL
+    landingPageIcons
+    landingPageIconsDark
+    enableTracking
+    loyaltyProgramId
+    ratingType
+    enableLoyaltyRead
+    forceCalendarFirstDayOfWeek
+    enableGooglePay
+    enableApplePay
+    chipDiscountMechanicType
+    saleBanner {
+      id
+      type
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+      __typename
+    }
+    supplierBenefitCodes {
+      items {
+        id
+        type
+        createdAt
+        updatedAt
+        _version
+        _deleted
+        _lastChangedAt
+        partnerSupplierBenefitCodesId
+        __typename
+      }
+      nextToken
+      startedAt
+      __typename
+    }
+    uspSpec {
+      id
+      type
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+      __typename
+    }
+    settingsMenu {
+      id
+      type
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+      __typename
+    }
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+    partnerSaleBannerId
+    partnerUspSpecId
+    partnerSettingsMenuId
+    __typename
+  }
+}
+
+subscription OnDeletePartner($filter: ModelSubscriptionPartnerFilterInput) {
+  onDeletePartner(filter: $filter) {
+    id
+    implementationID
+    name
+    tag
+    clientIds
+    enablePSD2WebForm
+    enablePrePaidExtras
+    enableZeroExcess
+    enableZeroExcessUpSell
+    enableQuickFilters
+    enableRatings
+    loyaltyRegex
+    enableCovidInsuranceMessage
+    imageBaseURL
+    landingPageIcons
+    landingPageIconsDark
+    enableTracking
+    loyaltyProgramId
+    ratingType
+    enableLoyaltyRead
+    forceCalendarFirstDayOfWeek
+    enableGooglePay
+    enableApplePay
+    chipDiscountMechanicType
+    saleBanner {
+      id
+      type
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+      __typename
+    }
+    supplierBenefitCodes {
+      items {
+        id
+        type
+        createdAt
+        updatedAt
+        _version
+        _deleted
+        _lastChangedAt
+        partnerSupplierBenefitCodesId
+        __typename
+      }
+      nextToken
+      startedAt
+      __typename
+    }
+    uspSpec {
+      id
+      type
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+      __typename
+    }
+    settingsMenu {
+      id
+      type
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+      __typename
+    }
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+    partnerSaleBannerId
+    partnerUspSpecId
+    partnerSettingsMenuId
+    __typename
+  }
+}
+
+subscription OnCreateSaleBanner(
+  $filter: ModelSubscriptionSaleBannerFilterInput
+) {
+  onCreateSaleBanner(filter: $filter) {
+    id
+    type
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+    __typename
+  }
+}
+
+subscription OnUpdateSaleBanner(
+  $filter: ModelSubscriptionSaleBannerFilterInput
+) {
+  onUpdateSaleBanner(filter: $filter) {
+    id
+    type
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+    __typename
+  }
+}
+
+subscription OnDeleteSaleBanner(
+  $filter: ModelSubscriptionSaleBannerFilterInput
+) {
+  onDeleteSaleBanner(filter: $filter) {
+    id
+    type
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+    __typename
+  }
+}
+
+subscription OnCreateSupplierBenefitCode(
+  $filter: ModelSubscriptionSupplierBenefitCodeFilterInput
+) {
+  onCreateSupplierBenefitCode(filter: $filter) {
+    id
+    type
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+    partnerSupplierBenefitCodesId
+    __typename
+  }
+}
+
+subscription OnUpdateSupplierBenefitCode(
+  $filter: ModelSubscriptionSupplierBenefitCodeFilterInput
+) {
+  onUpdateSupplierBenefitCode(filter: $filter) {
+    id
+    type
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+    partnerSupplierBenefitCodesId
+    __typename
+  }
+}
+
+subscription OnDeleteSupplierBenefitCode(
+  $filter: ModelSubscriptionSupplierBenefitCodeFilterInput
+) {
+  onDeleteSupplierBenefitCode(filter: $filter) {
+    id
+    type
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+    partnerSupplierBenefitCodesId
+    __typename
+  }
+}
+
+subscription OnCreateUSPSpec($filter: ModelSubscriptionUSPSpecFilterInput) {
+  onCreateUSPSpec(filter: $filter) {
+    id
+    type
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+    __typename
+  }
+}
+
+subscription OnUpdateUSPSpec($filter: ModelSubscriptionUSPSpecFilterInput) {
+  onUpdateUSPSpec(filter: $filter) {
+    id
+    type
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+    __typename
+  }
+}
+
+subscription OnDeleteUSPSpec($filter: ModelSubscriptionUSPSpecFilterInput) {
+  onDeleteUSPSpec(filter: $filter) {
+    id
+    type
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+    __typename
+  }
+}
+
+subscription OnCreateSettingsMenu(
+  $filter: ModelSubscriptionSettingsMenuFilterInput
+) {
+  onCreateSettingsMenu(filter: $filter) {
+    id
+    type
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+    __typename
+  }
+}
+
+subscription OnUpdateSettingsMenu(
+  $filter: ModelSubscriptionSettingsMenuFilterInput
+) {
+  onUpdateSettingsMenu(filter: $filter) {
+    id
+    type
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+    __typename
+  }
+}
+
+subscription OnDeleteSettingsMenu(
+  $filter: ModelSubscriptionSettingsMenuFilterInput
+) {
+  onDeleteSettingsMenu(filter: $filter) {
+    id
+    type
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+    __typename
   }
 }

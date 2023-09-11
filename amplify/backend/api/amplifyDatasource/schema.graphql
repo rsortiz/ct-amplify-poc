@@ -1,0 +1,60 @@
+# This "input" configures a global authorization rule to enable public access to
+# all models in this schema. Learn more about authorization rules here: https://docs.amplify.aws/cli/graphql/authorization-rules
+input AMPLIFY { globalAuthRule: AuthRule = { allow: public } } # FOR TESTING ONLY!
+
+type Booking @model {
+  id: ID!
+  resID: String!
+  username: String!
+}
+
+type Partner @model {
+  id: ID!
+  implementationID: String!
+  name: String
+  tag: String
+  clientIds: [String]
+  enablePSD2WebForm: Boolean
+  enablePrePaidExtras: Boolean
+  enableZeroExcess: Boolean
+  enableZeroExcessUpSell: Boolean
+  enableQuickFilters: Boolean
+  enableRatings: Boolean
+  loyaltyRegex: String
+  enableCovidInsuranceMessage: Boolean
+  imageBaseURL: String
+  landingPageIcons: [String]
+  landingPageIconsDark: [String]
+  enableTracking: Boolean
+  loyaltyProgramId: String
+  ratingType: String
+  enableLoyaltyRead: Boolean
+  forceCalendarFirstDayOfWeek: Int
+  enableGooglePay: Boolean
+  enableApplePay: Boolean
+  chipDiscountMechanicType: String
+  saleBanner: SaleBanner @hasOne
+  supplierBenefitCodes: [SupplierBenefitCode] @hasMany
+  uspSpec: USPSpec @hasOne
+  settingsMenu: SettingsMenu @hasOne
+}
+
+type SaleBanner @model {
+  id: ID!
+  type: String!
+}
+
+type SupplierBenefitCode @model {
+  id: ID!
+  type: String!
+}
+
+type USPSpec @model {
+  id: ID!
+  type: String!
+}
+
+type SettingsMenu @model {
+  id: ID!
+  type: String!
+}

@@ -21,7 +21,7 @@
 #import "AWSCocoaLumberjack.h"
 #import "AWSCategory.h"
 
-NSString *const AWSiOSSDKVersion = @"2.30.4";
+NSString *const AWSiOSSDKVersion = @"2.33.4";
 NSString *const AWSServiceErrorDomain = @"com.amazonaws.AWSServiceErrorDomain";
 
 static NSString *const AWSServiceConfigurationUnknown = @"Unknown";
@@ -273,6 +273,7 @@ static NSString *const AWSRegionNameMESouth1 = @"me-south-1";
 static NSString *const AWSRegionNameAFSouth1 = @"af-south-1";
 static NSString *const AWSRegionNameEUSouth1 = @"eu-south-1";
 static NSString *const AWSRegionNameEUSouth2 = @"eu-south-2";
+static NSString *const AWSRegionNameILCentral1 = @"il-central-1";
 
 static NSString *const AWSServiceNameAPIGateway = @"execute-api";
 static NSString *const AWSServiceNameAutoScaling = @"autoscaling";
@@ -294,6 +295,7 @@ static NSString *const AWSServiceNameKinesis = @"kinesis";
 static NSString *const AWSServiceNameKinesisVideo = @"kinesisvideo";
 static NSString *const AWSServiceNameKinesisVideoArchivedMedia = @"kinesisvideo";
 static NSString *const AWSServiceNameKinesisVideoSignaling = @"kinesisvideo";
+static NSString *const AWSServiceNameKinesisVideoWebRTCStorage = @"kinesisvideo";
 static NSString *const AWSServiceNameLambda = @"lambda";
 static NSString *const AWSServiceNameLexRuntime = @"runtime.lex";
 static NSString *const AWSServiceNameLogs = @"logs";
@@ -465,6 +467,8 @@ static NSString *const AWSServiceNameChimeSDKIdentity = @"chime";
             return AWSRegionNameEUCentral1;
         case AWSRegionEUCentral2:
             return AWSRegionNameEUCentral2;
+        case AWSRegionILCentral1:
+            return AWSRegionNameILCentral1;
         case AWSRegionAPSoutheast1:
             return AWSRegionNameAPSoutheast1;
         case AWSRegionAPSoutheast2:
@@ -556,6 +560,8 @@ static NSString *const AWSServiceNameChimeSDKIdentity = @"chime";
             return AWSServiceNameKinesisVideoArchivedMedia;
         case AWSServiceKinesisVideoSignaling:
             return AWSServiceNameKinesisVideoSignaling;
+        case AWSServiceKinesisVideoWebRTCStorage:
+            return AWSServiceNameKinesisVideoWebRTCStorage;
         case AWSServiceLambda:
             return AWSServiceNameLambda;
         case AWSServiceLexRuntime:

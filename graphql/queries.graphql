@@ -1,4 +1,5 @@
 # this is an auto generated file. This will be overwritten
+
 query GetBooking($id: ID!) {
   getBooking(id: $id) {
     id
@@ -6,8 +7,13 @@ query GetBooking($id: ID!) {
     username
     createdAt
     updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+    __typename
   }
 }
+
 query ListBookings(
   $filter: ModelBookingFilterInput
   $limit: Int
@@ -20,7 +26,555 @@ query ListBookings(
       username
       createdAt
       updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+      __typename
     }
     nextToken
+    startedAt
+    __typename
+  }
+}
+
+query SyncBookings(
+  $filter: ModelBookingFilterInput
+  $limit: Int
+  $nextToken: String
+  $lastSync: AWSTimestamp
+) {
+  syncBookings(
+    filter: $filter
+    limit: $limit
+    nextToken: $nextToken
+    lastSync: $lastSync
+  ) {
+    items {
+      id
+      resID
+      username
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+      __typename
+    }
+    nextToken
+    startedAt
+    __typename
+  }
+}
+
+query GetPartner($id: ID!) {
+  getPartner(id: $id) {
+    id
+    implementationID
+    name
+    tag
+    clientIds
+    enablePSD2WebForm
+    enablePrePaidExtras
+    enableZeroExcess
+    enableZeroExcessUpSell
+    enableQuickFilters
+    enableRatings
+    loyaltyRegex
+    enableCovidInsuranceMessage
+    imageBaseURL
+    landingPageIcons
+    landingPageIconsDark
+    enableTracking
+    loyaltyProgramId
+    ratingType
+    enableLoyaltyRead
+    forceCalendarFirstDayOfWeek
+    enableGooglePay
+    enableApplePay
+    chipDiscountMechanicType
+    saleBanner {
+      id
+      type
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+      __typename
+    }
+    supplierBenefitCodes {
+      items {
+        id
+        type
+        createdAt
+        updatedAt
+        _version
+        _deleted
+        _lastChangedAt
+        partnerSupplierBenefitCodesId
+        __typename
+      }
+      nextToken
+      startedAt
+      __typename
+    }
+    uspSpec {
+      id
+      type
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+      __typename
+    }
+    settingsMenu {
+      id
+      type
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+      __typename
+    }
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+    partnerSaleBannerId
+    partnerUspSpecId
+    partnerSettingsMenuId
+    __typename
+  }
+}
+
+query ListPartners(
+  $filter: ModelPartnerFilterInput
+  $limit: Int
+  $nextToken: String
+) {
+  listPartners(filter: $filter, limit: $limit, nextToken: $nextToken) {
+    items {
+      id
+      implementationID
+      name
+      tag
+      clientIds
+      enablePSD2WebForm
+      enablePrePaidExtras
+      enableZeroExcess
+      enableZeroExcessUpSell
+      enableQuickFilters
+      enableRatings
+      loyaltyRegex
+      enableCovidInsuranceMessage
+      imageBaseURL
+      landingPageIcons
+      landingPageIconsDark
+      enableTracking
+      loyaltyProgramId
+      ratingType
+      enableLoyaltyRead
+      forceCalendarFirstDayOfWeek
+      enableGooglePay
+      enableApplePay
+      chipDiscountMechanicType
+      saleBanner {
+        id
+        type
+        createdAt
+        updatedAt
+        _version
+        _deleted
+        _lastChangedAt
+        __typename
+      }
+      supplierBenefitCodes {
+        nextToken
+        startedAt
+        __typename
+      }
+      uspSpec {
+        id
+        type
+        createdAt
+        updatedAt
+        _version
+        _deleted
+        _lastChangedAt
+        __typename
+      }
+      settingsMenu {
+        id
+        type
+        createdAt
+        updatedAt
+        _version
+        _deleted
+        _lastChangedAt
+        __typename
+      }
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+      partnerSaleBannerId
+      partnerUspSpecId
+      partnerSettingsMenuId
+      __typename
+    }
+    nextToken
+    startedAt
+    __typename
+  }
+}
+
+query SyncPartners(
+  $filter: ModelPartnerFilterInput
+  $limit: Int
+  $nextToken: String
+  $lastSync: AWSTimestamp
+) {
+  syncPartners(
+    filter: $filter
+    limit: $limit
+    nextToken: $nextToken
+    lastSync: $lastSync
+  ) {
+    items {
+      id
+      implementationID
+      name
+      tag
+      clientIds
+      enablePSD2WebForm
+      enablePrePaidExtras
+      enableZeroExcess
+      enableZeroExcessUpSell
+      enableQuickFilters
+      enableRatings
+      loyaltyRegex
+      enableCovidInsuranceMessage
+      imageBaseURL
+      landingPageIcons
+      landingPageIconsDark
+      enableTracking
+      loyaltyProgramId
+      ratingType
+      enableLoyaltyRead
+      forceCalendarFirstDayOfWeek
+      enableGooglePay
+      enableApplePay
+      chipDiscountMechanicType
+      saleBanner {
+        id
+        type
+        createdAt
+        updatedAt
+        _version
+        _deleted
+        _lastChangedAt
+        __typename
+      }
+      supplierBenefitCodes {
+        nextToken
+        startedAt
+        __typename
+      }
+      uspSpec {
+        id
+        type
+        createdAt
+        updatedAt
+        _version
+        _deleted
+        _lastChangedAt
+        __typename
+      }
+      settingsMenu {
+        id
+        type
+        createdAt
+        updatedAt
+        _version
+        _deleted
+        _lastChangedAt
+        __typename
+      }
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+      partnerSaleBannerId
+      partnerUspSpecId
+      partnerSettingsMenuId
+      __typename
+    }
+    nextToken
+    startedAt
+    __typename
+  }
+}
+
+query GetSaleBanner($id: ID!) {
+  getSaleBanner(id: $id) {
+    id
+    type
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+    __typename
+  }
+}
+
+query ListSaleBanners(
+  $filter: ModelSaleBannerFilterInput
+  $limit: Int
+  $nextToken: String
+) {
+  listSaleBanners(filter: $filter, limit: $limit, nextToken: $nextToken) {
+    items {
+      id
+      type
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+      __typename
+    }
+    nextToken
+    startedAt
+    __typename
+  }
+}
+
+query SyncSaleBanners(
+  $filter: ModelSaleBannerFilterInput
+  $limit: Int
+  $nextToken: String
+  $lastSync: AWSTimestamp
+) {
+  syncSaleBanners(
+    filter: $filter
+    limit: $limit
+    nextToken: $nextToken
+    lastSync: $lastSync
+  ) {
+    items {
+      id
+      type
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+      __typename
+    }
+    nextToken
+    startedAt
+    __typename
+  }
+}
+
+query GetSupplierBenefitCode($id: ID!) {
+  getSupplierBenefitCode(id: $id) {
+    id
+    type
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+    partnerSupplierBenefitCodesId
+    __typename
+  }
+}
+
+query ListSupplierBenefitCodes(
+  $filter: ModelSupplierBenefitCodeFilterInput
+  $limit: Int
+  $nextToken: String
+) {
+  listSupplierBenefitCodes(
+    filter: $filter
+    limit: $limit
+    nextToken: $nextToken
+  ) {
+    items {
+      id
+      type
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+      partnerSupplierBenefitCodesId
+      __typename
+    }
+    nextToken
+    startedAt
+    __typename
+  }
+}
+
+query SyncSupplierBenefitCodes(
+  $filter: ModelSupplierBenefitCodeFilterInput
+  $limit: Int
+  $nextToken: String
+  $lastSync: AWSTimestamp
+) {
+  syncSupplierBenefitCodes(
+    filter: $filter
+    limit: $limit
+    nextToken: $nextToken
+    lastSync: $lastSync
+  ) {
+    items {
+      id
+      type
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+      partnerSupplierBenefitCodesId
+      __typename
+    }
+    nextToken
+    startedAt
+    __typename
+  }
+}
+
+query GetUSPSpec($id: ID!) {
+  getUSPSpec(id: $id) {
+    id
+    type
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+    __typename
+  }
+}
+
+query ListUSPSpecs(
+  $filter: ModelUSPSpecFilterInput
+  $limit: Int
+  $nextToken: String
+) {
+  listUSPSpecs(filter: $filter, limit: $limit, nextToken: $nextToken) {
+    items {
+      id
+      type
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+      __typename
+    }
+    nextToken
+    startedAt
+    __typename
+  }
+}
+
+query SyncUSPSpecs(
+  $filter: ModelUSPSpecFilterInput
+  $limit: Int
+  $nextToken: String
+  $lastSync: AWSTimestamp
+) {
+  syncUSPSpecs(
+    filter: $filter
+    limit: $limit
+    nextToken: $nextToken
+    lastSync: $lastSync
+  ) {
+    items {
+      id
+      type
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+      __typename
+    }
+    nextToken
+    startedAt
+    __typename
+  }
+}
+
+query GetSettingsMenu($id: ID!) {
+  getSettingsMenu(id: $id) {
+    id
+    type
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+    __typename
+  }
+}
+
+query ListSettingsMenus(
+  $filter: ModelSettingsMenuFilterInput
+  $limit: Int
+  $nextToken: String
+) {
+  listSettingsMenus(filter: $filter, limit: $limit, nextToken: $nextToken) {
+    items {
+      id
+      type
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+      __typename
+    }
+    nextToken
+    startedAt
+    __typename
+  }
+}
+
+query SyncSettingsMenus(
+  $filter: ModelSettingsMenuFilterInput
+  $limit: Int
+  $nextToken: String
+  $lastSync: AWSTimestamp
+) {
+  syncSettingsMenus(
+    filter: $filter
+    limit: $limit
+    nextToken: $nextToken
+    lastSync: $lastSync
+  ) {
+    items {
+      id
+      type
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+      __typename
+    }
+    nextToken
+    startedAt
+    __typename
   }
 }

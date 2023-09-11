@@ -18,7 +18,8 @@ extension Booking {
   public static let schema = defineSchema { model in
     let booking = Booking.keys
     
-    model.pluralName = "Bookings"
+    model.listPluralName = "Bookings"
+    model.syncPluralName = "Bookings"
     
     model.attributes(
       .primaryKey(fields: [booking.id])
