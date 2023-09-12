@@ -18,6 +18,10 @@ extension SupplierBenefitCode {
   public static let schema = defineSchema { model in
     let supplierBenefitCode = SupplierBenefitCode.keys
     
+    model.authRules = [
+      rule(allow: .public, operations: [.create, .update, .delete, .read])
+    ]
+    
     model.listPluralName = "SupplierBenefitCodes"
     model.syncPluralName = "SupplierBenefitCodes"
     

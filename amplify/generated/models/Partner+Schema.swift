@@ -46,6 +46,10 @@ extension Partner {
   public static let schema = defineSchema { model in
     let partner = Partner.keys
     
+    model.authRules = [
+      rule(allow: .public, operations: [.create, .update, .delete, .read])
+    ]
+    
     model.listPluralName = "Partners"
     model.syncPluralName = "Partners"
     

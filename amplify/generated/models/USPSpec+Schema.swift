@@ -17,6 +17,10 @@ extension USPSpec {
   public static let schema = defineSchema { model in
     let uSPSpec = USPSpec.keys
     
+    model.authRules = [
+      rule(allow: .public, operations: [.create, .update, .delete, .read])
+    ]
+    
     model.listPluralName = "USPSpecs"
     model.syncPluralName = "USPSpecs"
     

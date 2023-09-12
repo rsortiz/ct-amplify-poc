@@ -17,6 +17,10 @@ extension SaleBanner {
   public static let schema = defineSchema { model in
     let saleBanner = SaleBanner.keys
     
+    model.authRules = [
+      rule(allow: .public, operations: [.create, .update, .delete, .read])
+    ]
+    
     model.listPluralName = "SaleBanners"
     model.syncPluralName = "SaleBanners"
     

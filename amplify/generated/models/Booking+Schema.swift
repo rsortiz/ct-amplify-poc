@@ -18,6 +18,10 @@ extension Booking {
   public static let schema = defineSchema { model in
     let booking = Booking.keys
     
+    model.authRules = [
+      rule(allow: .public, operations: [.create, .update, .delete, .read])
+    ]
+    
     model.listPluralName = "Bookings"
     model.syncPluralName = "Bookings"
     

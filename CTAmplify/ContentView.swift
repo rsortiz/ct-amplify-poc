@@ -15,6 +15,7 @@ struct ContentView: View {
     @State private var showSignUpView = false
     @State private var showAddBooking = false
     @State private var showMyBookings = false
+    @State private var showPartners = false
     @State private var showingAlert = false
     
     @State private var showingForm = false
@@ -28,6 +29,15 @@ struct ContentView: View {
             VStack(spacing: 16) {
                 if showingLoggedIn {
                     Text("You're logged in!")
+                    
+                    CTButton(title: "Partners",
+                             action: {
+                        showPartners = true
+                    }, buttonColor: .blue)
+                    
+                    NavigationLink(destination: PartnersView(), isActive: $showPartners) {
+                        EmptyView()
+                    }
                     
                     CTButton(title: "My Bookings",
                              action: {

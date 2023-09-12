@@ -8,4 +8,5 @@ target 'CTAmplify' do
   pod 'Amplify'
   pod 'AmplifyPlugins/AWSCognitoAuthPlugin'
   pod 'AmplifyPlugins/AWSAPIPlugin'
+  pod 'AmplifyPlugins/AWSDataStorePlugin'
 end

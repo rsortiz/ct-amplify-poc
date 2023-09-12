@@ -17,6 +17,10 @@ extension SettingsMenu {
   public static let schema = defineSchema { model in
     let settingsMenu = SettingsMenu.keys
     
+    model.authRules = [
+      rule(allow: .public, operations: [.create, .update, .delete, .read])
+    ]
+    
     model.listPluralName = "SettingsMenus"
     model.syncPluralName = "SettingsMenus"
     
