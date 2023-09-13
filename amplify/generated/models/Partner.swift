@@ -31,6 +31,7 @@ public struct Partner: Model, Loopable {
   public var supplierBenefitCodes: List<SupplierBenefitCode>?
   public var uspSpec: USPSpec?
   public var settingsMenu: SettingsMenu?
+  public var enablePayPaliOS: Bool?
   public var createdAt: Temporal.DateTime?
   public var updatedAt: Temporal.DateTime?
   public var partnerSaleBannerId: String?
@@ -65,6 +66,7 @@ public struct Partner: Model, Loopable {
       supplierBenefitCodes: List<SupplierBenefitCode>? = [],
       uspSpec: USPSpec? = nil,
       settingsMenu: SettingsMenu? = nil,
+      enablePayPaliOS: Bool? = nil,
       partnerSaleBannerId: String? = nil,
       partnerUspSpecId: String? = nil,
       partnerSettingsMenuId: String? = nil) {
@@ -96,6 +98,7 @@ public struct Partner: Model, Loopable {
       supplierBenefitCodes: supplierBenefitCodes,
       uspSpec: uspSpec,
       settingsMenu: settingsMenu,
+      enablePayPaliOS: enablePayPaliOS,
       createdAt: nil,
       updatedAt: nil,
       partnerSaleBannerId: partnerSaleBannerId,
@@ -130,6 +133,7 @@ public struct Partner: Model, Loopable {
       supplierBenefitCodes: List<SupplierBenefitCode>? = [],
       uspSpec: USPSpec? = nil,
       settingsMenu: SettingsMenu? = nil,
+      enablePayPaliOS: Bool? = nil,
       createdAt: Temporal.DateTime? = nil,
       updatedAt: Temporal.DateTime? = nil,
       partnerSaleBannerId: String? = nil,
@@ -163,6 +167,7 @@ public struct Partner: Model, Loopable {
       self.supplierBenefitCodes = supplierBenefitCodes
       self.uspSpec = uspSpec
       self.settingsMenu = settingsMenu
+      self.enablePayPaliOS = enablePayPaliOS
       self.createdAt = createdAt
       self.updatedAt = updatedAt
       self.partnerSaleBannerId = partnerSaleBannerId
