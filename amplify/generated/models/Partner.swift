@@ -2,7 +2,7 @@
 import Amplify
 import Foundation
 
-public struct Partner: Model {
+public struct Partner: Model, Loopable {
   public let id: String
   public var implementationID: String
   public var name: String?
