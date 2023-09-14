@@ -2,7 +2,7 @@
 import Amplify
 import Foundation
 
-public struct Partner: Model, Loopable {
+public struct Partner: Model {
   public let id: String
   public var implementationID: String
   public var name: String?
@@ -32,6 +32,7 @@ public struct Partner: Model, Loopable {
   public var uspSpec: USPSpec?
   public var settingsMenu: SettingsMenu?
   public var enablePayPaliOS: Bool?
+  public var enablePayPalAndroid: Bool?
   public var createdAt: Temporal.DateTime?
   public var updatedAt: Temporal.DateTime?
   public var partnerSaleBannerId: String?
@@ -67,6 +68,7 @@ public struct Partner: Model, Loopable {
       uspSpec: USPSpec? = nil,
       settingsMenu: SettingsMenu? = nil,
       enablePayPaliOS: Bool? = nil,
+      enablePayPalAndroid: Bool? = nil,
       partnerSaleBannerId: String? = nil,
       partnerUspSpecId: String? = nil,
       partnerSettingsMenuId: String? = nil) {
@@ -99,6 +101,7 @@ public struct Partner: Model, Loopable {
       uspSpec: uspSpec,
       settingsMenu: settingsMenu,
       enablePayPaliOS: enablePayPaliOS,
+      enablePayPalAndroid: enablePayPalAndroid,
       createdAt: nil,
       updatedAt: nil,
       partnerSaleBannerId: partnerSaleBannerId,
@@ -134,6 +137,7 @@ public struct Partner: Model, Loopable {
       uspSpec: USPSpec? = nil,
       settingsMenu: SettingsMenu? = nil,
       enablePayPaliOS: Bool? = nil,
+      enablePayPalAndroid: Bool? = nil,
       createdAt: Temporal.DateTime? = nil,
       updatedAt: Temporal.DateTime? = nil,
       partnerSaleBannerId: String? = nil,
@@ -168,6 +172,7 @@ public struct Partner: Model, Loopable {
       self.uspSpec = uspSpec
       self.settingsMenu = settingsMenu
       self.enablePayPaliOS = enablePayPaliOS
+      self.enablePayPalAndroid = enablePayPalAndroid
       self.createdAt = createdAt
       self.updatedAt = updatedAt
       self.partnerSaleBannerId = partnerSaleBannerId

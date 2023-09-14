@@ -20,6 +20,20 @@
       },
       "providerPlugin": "awscloudformation",
       "service": "AppSync"
+    },
+    "apie061b011": {
+      "dependsOn": [
+        {
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "function",
+          "resourceName": "ctamplify5932c251"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "API Gateway"
     }
   },
   "auth": {
@@ -46,6 +60,31 @@
       },
       "providerPlugin": "awscloudformation",
       "service": "Cognito"
+    }
+  },
+  "function": {
+    "ctamplify5932c251": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    }
+  },
+  "parameters": {
+    "AMPLIFY_function_ctamplify5932c251_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "ctamplify5932c251"
+        }
+      ]
+    },
+    "AMPLIFY_function_ctamplify5932c251_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "ctamplify5932c251"
+        }
+      ]
     }
   }
 }

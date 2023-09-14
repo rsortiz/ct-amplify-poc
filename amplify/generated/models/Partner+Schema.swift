@@ -34,6 +34,7 @@ extension Partner {
     case uspSpec
     case settingsMenu
     case enablePayPaliOS
+    case enablePayPalAndroid
     case createdAt
     case updatedAt
     case partnerSaleBannerId
@@ -88,6 +89,7 @@ extension Partner {
       .hasOne(partner.uspSpec, is: .optional, ofType: USPSpec.self, associatedWith: USPSpec.keys.id, targetNames: ["partnerUspSpecId"]),
       .hasOne(partner.settingsMenu, is: .optional, ofType: SettingsMenu.self, associatedWith: SettingsMenu.keys.id, targetNames: ["partnerSettingsMenuId"]),
       .field(partner.enablePayPaliOS, is: .optional, ofType: .bool),
+      .field(partner.enablePayPalAndroid, is: .optional, ofType: .bool),
       .field(partner.createdAt, is: .optional, isReadOnly: true, ofType: .dateTime),
       .field(partner.updatedAt, is: .optional, isReadOnly: true, ofType: .dateTime),
       .field(partner.partnerSaleBannerId, is: .optional, ofType: .string),

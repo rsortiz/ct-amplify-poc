@@ -34,6 +34,7 @@ type Partner @model @auth(rules: [{allow: public}]) {
   uspSpec: USPSpec @hasOne
   settingsMenu: SettingsMenu @hasOne
   enablePayPaliOS: Boolean
+  enablePayPalAndroid: Boolean
 }
 
 type SaleBanner @model @auth(rules: [{allow: public}]) {
